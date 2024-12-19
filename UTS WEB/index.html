@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<title>Bahasa</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+    <style>
+    
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #1e2630;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #002b5c;
+            font-weight: bold;
+            transition: color 0.3s;
+            background: #ffffff ;
+        }
+        .nav a:hover {
+            color: #0056b3;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .cta button {
+            background-color: #002b5c;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://img.freepik.com/free-vector/programming-concept-it-education-student-writing-software-coding-application-java-script-it-project-digital-technology-development-website-interface-vector-illustration_613284-1712.jpg?t=st=1730892789~exp=1730896389~hmac=bd5e9c90833b9288177d3dbd611e4b5fb84fde87afbf3c0189e3bf0cdf0a7410&w=740"> <!-- Pastikan gambar logo ada di lokasi yang benar -->
+        <nav class="nav">
+            <a href="index.html">Beranda</a>
+            <a href="manfaat.html">JavaScript</a>
+            <a href="contoh.html">Python</a>
+            <a href="hubungi.html">Hubungi</a>
+            <a href="isikonten.html">Pelajari Lebih Lanjut</a>
+            <a href="login.html">Login</a>
+            <a href="form.html">Daftar</a>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Kalian tau ga bahasa pemograman tuh apa?</h1>
+        <p>Mari kita pelajari lebih dalam.</p>
+        <div class="cta">
+            <button onclick="alert('Pelajari lebih lanjut!')">Pelajari Lebih Lanjut</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Copyright. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

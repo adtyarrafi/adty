@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+    <style>
+    
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #1e2630;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 50px;
+            height: auto;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #002b5c;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #0056b3;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .cta button {
+            background-color: #002b5c;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="iot-logo.png" alt="IoT Loghttps://img.freepik.com/free-vector/programming-concept-it-education-student-writing-software-coding-application-java-script-it-project-digital-technology-development-website-interface-vector-illustration_613284-1712.jpg?t=st=1730892789~exp=1730896389~hmac=bd5e9c90833b9288177d3dbd611e4b5fb84fde87afbf3c0189e3bf0cdf0a7410&w=740o"> <!-- Pastikan gambar logo ada di lokasi yang benar -->
+        <nav class="nav">
+            <a href="index.html">Beranda</a>
+            <a href="manfaat.html">Manfaat</a>
+            <a href="contoh.html">Contoh</a>
+            <a href="hubungi.html">Hubungi</a>
+            <a href="isikonten.html">Pelajari Lebih Lanjut</a>
+            <a href="login.html">Login</a>
+            <a href="daftar.html">Daftar</a>
+            
+        </nav>
+    </header>
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td>User Name:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Re-type Password:</td>
+                <td><input type="password" name="retype_password" required></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Nama:</td>
+                <td><input type="text" name="nama" required></td>
+            </tr>
+            <tr>
+                <td>NIM:</td>
+                <td><input type="text" name="nim" required></td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>
+                <td><textarea name="alamat" rows="3" cols="20" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Kota Asal:</td>
+                <td>
+                    <select name="kota_asal">
+                        <option value="banda aceh">Banda Aceh,  Aceh</option>
+<option value="langsa">Langsa,  Aceh</option>
+<option value="lhokseumawe">Lhokseumawe,  Aceh</option>
+<option value="sabang">Sabang,  Aceh</option>
+<option value="denpasar">Denpasar,  Bali</option>
+<option value="cilegon">Cilegon,  Banten</option>
+<option value="serang">Serang,  Banten</option>
+<option value="tangerang">Tangerang,  Banten</option>
+<option value="bengkulu">Bengkulu,  Bengkulu</option>
+<option value="yogyakarta">Yogyakarta,  DI Yogyakarta</option>
+<option value="jakarta">Jakarta,  DKI Jakarta</option>
+<option value="gorontalo">Gorontalo,  Gorontalo</option>
+<option value="jambi">Jambi,  Jambi</option>
+<option value="sungaipenuh">Sungaipenuh,  Jambi</option>
+<option value="bandung">Bandung,  Jawa Barat</option>
+<option value="bekasi">Bekasi,  Jawa Barat</option>
+<option value="bogor">Bogor,  Jawa Barat</option>
+<option value="cirebon">Cirebon,  Jawa Barat</option>
+<option value="depok">Depok,  Jawa Barat</option>
+<option value="karawang">Karawang,  Jawa Barat</option>
+<option value="sukabumi">Sukabumi,  Jawa Barat</option>
+<option value="tasikmalaya">Tasikmalaya,  Jawa Barat</option>
+<option value="cilacap">Cilacap,  Jawa Tengah</option>
+<option value="magelang">Magelang,  Jawa Tengah</option>
+<option value="purwokerto">Purwokerto,  Jawa Tengah</option>
+<option value="salatiga">Salatiga,  Jawa Tengah</option>
+<option value="semarang">Semarang,  Jawa Tengah</option>
+<option value="tegal">Tegal,  Jawa Tengah</option>
+<option value="banyuwangi">Banyuwangi,  Jawa Timur</option>
+<option value="blitar">Blitar,  Jawa Timur</option>
+<option value="jember">Jember,  Jawa Timur</option>
+<option value="kediri">Kediri,  Jawa Timur</option>
+<option value="madiun">Madiun,  Jawa Timur</option>
+<option value="malang">Malang,  Jawa Timur</option>
+<option value="mojokerto">Mojokerto,  Jawa Timur</option>
+<option value="pasuruan">Pasuruan,  Jawa Timur</option>
+<option value="probolinggo">Probolinggo,  Jawa Timur</option>
+<option value="sidoarjo">Sidoarjo,  Jawa Timur</option>
+<option value="surabaya">Surabaya,  Jawa Timur</option>
+<option value="pontianak">Pontianak,  Kalimantan Barat</option>
+<option value="singkawang">Singkawang,  Kalimantan Barat</option>
+<option value="banjarmasin">Banjarmasin,  Kalimantan Selatan</option>
+<option value="balikpapan">Balikpapan,  Kalimantan Timur</option>
+<option value="bontang">Bontang,  Kalimantan Timur</option>
+<option value="samarinda">Samarinda,  Kalimantan Timur</option>
+<option value="tarakan">Tarakan,  Kalimantan Utara</option>
+<option value="batam">Batam,  Kepulauan Riau</option>
+<option value="tanjungpinang">Tanjungpinang,  Kepulauan Riau</option>
+<option value="bandar lampung">Bandar Lampung,  Lampung</option>
+<option value="ambon">Ambon,  Maluku</option>
+<option value="tual">Tual,  Maluku</option>
+<option value="ternate">Ternate,  Maluku Utara</option>
+<option value="mataram">Mataram,  Nusa Tenggara Barat</option>
+<option value="kupang">Kupang,  Nusa Tenggara Timur</option>
+<option value="jayapura">Jayapura,  Papua</option>
+<option value="sorong">Sorong,  Papua Barat</option>
+<option value="pekanbaru">Pekanbaru,  Riau</option>
+<option value="makassar">Makassar,  Sulawesi Selatan</option>
+<option value="palopo">Palopo,  Sulawesi Selatan</option>
+<option value="palu">Palu,  Sulawesi Tengah</option>
+<option value="bau-bau">Bau-Bau,  Sulawesi Tenggara</option>
+<option value="kendari">Kendari,  Sulawesi Tenggara</option>
+<option value="bitung">Bitung,  Sulawesi Utara</option>
+<option value="kotamobagu">Kotamobagu,  Sulawesi Utara</option>
+<option value="manado">Manado,  Sulawesi Utara</option>
+<option value="tomohon">Tomohon,  Sulawesi Utara</option>
+<option value="bukittinggi">Bukittinggi,  Sumatera Barat</option>
+<option value="padang">Padang,  Sumatera Barat</option>
+<option value="pariaman">Pariaman,  Sumatera Barat</option>
+<option value="payakumbuh">Payakumbuh,  Sumatera Barat</option>
+<option value="sawahlunto">Sawahlunto,  Sumatera Barat</option>
+<option value="solok">Solok,  Sumatera Barat</option>
+<option value="lubuklinggau">Lubuklinggau,  Sumatera Selatan</option>
+<option value="palembang">Palembang,  Sumatera Selatan</option>
+<option value="binjai">Binjai,  Sumatera Utara</option>
+<option value="lubuk pakam">Lubuk Pakam,  Sumatera Utara</option>
+<option value="medan">Medan,  Sumatera Utara</option>
+<option value="pematangsiantar">Pematangsiantar,  Sumatera Utara</option>
+<option value="tanjungbalai">Tanjungbalai,  Sumatera Utara</option>
+<option value="tebing tinggi">Tebing Tinggi,  Sumatera Utara</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="pria" required> Pria
+                    <input type="radio" name="jenis_kelamin" value="wanita" required> Wanita
+                    
+                </td>
+            </tr>
+                <tr>
+                <td>Hobi</td>
+            <td>
+                <input type="checkbox" name="hobi" value="coding"> Coding <br>
+                <input type="checkbox" name="hobi" value="psan"> PSan <br>
+                <input type="checkbox" name="hobi" value="bilyard"> Bilyard <br>
+                <input type="checkbox" name="hobi" value="futsal"> Futsal <br>
+                <input type="checkbox" name="hobi" value="membaca"> Membaca <br>
+                <input type="checkbox" name="hobi" value="memasak"> Memasak <br>
+                <input type="checkbox" name="hobi" value="bersepeda"> Bersepeda <br>
+                <input type="checkbox" name="hobi" value="berenang"> Berenang <br>
+                <input type="checkbox" name="hobi" value="melukis"> Melukis <br>
+                <input type="checkbox" name="hobi" value="fotografi"> Fotografi <br>
+                <input type="checkbox" name="hobi" value="bermain_musik"> Bermain Musik <br>
+                <input type="checkbox" name="hobi" value="menonton_film"> Menonton Film <br>
+                <input type="checkbox" name="hobi" value="berkebun"> Berkebun <br>
+                <input type="checkbox" name="hobi" value="yoga"> Yoga <br>
+                <input type="checkbox" name="hobi" value="menulis"> Menulis <br>
+                <input type="checkbox" name="hobi" value="mendaki"> Mendaki Gunung <br>
+                <input type="checkbox" name="hobi" value="gaming"> Gaming <br>
+                <input type="checkbox" name="hobi" value="menggambar"> Menggambar <br>
+                <input type="checkbox" name="hobi" value="berburu"> Berburu <br>
+                <input type="checkbox" name="hobi" value="memancing"> Memancing <br>
+                
+    
+                </tr>   
+            </td>
+                <td>Deskripsi Pribadi:</td>
+                <td><textarea name="deskripsi_pribadi" rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Kirim">
+                    <input type="reset" value="Hapus">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
